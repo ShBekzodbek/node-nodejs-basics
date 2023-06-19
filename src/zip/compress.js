@@ -1,6 +1,9 @@
 import { createGzip } from "node:zlib";
+
 import fs from "fs";
+
 import { pipeline } from "stream/promises";
+
 import path from "node:path";
 
 const compress = async () => {
