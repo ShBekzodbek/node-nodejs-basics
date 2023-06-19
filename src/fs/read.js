@@ -1,8 +1,9 @@
+
 import { readFile } from "fs/promises";
 
 import path from "path";
 
-const read = async () => {
+ const read = async () => {
     try {
        const data = await readFile(
          path.join("src", "fs", "files", "fileToRead.txt"),
@@ -15,3 +16,5 @@ const read = async () => {
 };
 
 await read();
+
+

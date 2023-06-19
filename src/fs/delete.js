@@ -3,7 +3,7 @@ import path from "path";
 
 const remove = async () => {
     try {
-       await unlink(path.join("src/fs", "files", "fileToRemove.txt"));
+       await unlink(path.join("src/fs",'files','fileToRemove.txt'))
     } catch (err) {
         throw new Error("FS operation failed " + err);
     }
